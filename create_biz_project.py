@@ -92,7 +92,7 @@ os.system("cd " + PROJECT_FILE_PATH + "; ln -s . " + project_domain_name)
 print 'create soft link OK'
 
 #导入数据库
-conn = MySQLdb.connect(host="192.168.200.252",user="php_biz",passwd="drink_coffee",port=3307,charset="utf8")
+conn = MySQLdb.connect(host="*",user="*",passwd="*",port=3307,charset="utf8")
 sql = 'CREATE DATABASE  '+project_database_name+'  DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci'
 cursor = conn.cursor()
 cursor.execute(sql)
